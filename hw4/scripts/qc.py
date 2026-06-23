@@ -1,10 +1,5 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
-"""
-ШАГ 4: ПОСТРОЕНИЕ QC-ГРАФИКОВ (ПО ВСЕМ ДАННЫМ)
-Без загрузки всех данных в память
-"""
-
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -191,9 +186,9 @@ plt.savefig('results/figures/methylation_cumulative.png', dpi=150, bbox_inches='
 
 plt.show()
 
-print("   • results/figures/methylation_qc_plots.png")
-print("   • results/figures/methylation_cumulative.png")
-print(f"   • CpG сайтов: {total_rows:,}")
-print(f"   • Среднее метилирование: {mean_beta:.2%}")
-print(f"   • Среднее покрытие: {mean_cov:.1f}x")
-print(f"   • Диапазон coverage: {min_cov:.0f} - {max_cov:.0f}")
+print("  results/figures/methylation_qc_plots.png")
+print("  results/figures/methylation_cumulative.png")
+print(f" CpG сайтов: {total_rows:,}")
+print(f" Среднее метилирование: {mean_beta:.2%}")
+print(f" Среднее покрытие: {mean_cov:.1f}x")
+print(f" Диапазон coverage: {min_cov:.0f} - {max_cov:.0f}")
